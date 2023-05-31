@@ -4,7 +4,7 @@ function Result() {
   const { score, questions } = useQuiz();
 
   return (
-    <div>
+    <div className="p-10">
       <p>
         Correct answers: {score} / {questions.length}
       </p>

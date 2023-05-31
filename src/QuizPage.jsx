@@ -12,12 +12,15 @@ export default function QuizPage() {
       return <Quiz />;
     } else {
       return (
-        <button
-          className=" bg-green-400 border border-black mt-10 px-2 rounded-md  "
-          onClick={() => startQuiz()}
-        >
-          Starta Quiz
-        </button>
+        <div className="flex flex-col items-center p-10">
+          <img className="w-fit rounded-full " src="quiz.jpg"></img>
+          <button
+            className=" bg-purple-300 border border-black mt-10 px-5 rounded-full w-fit  "
+            onClick={() => startQuiz()}
+          >
+            Starta Quiz
+          </button>
+        </div>
       );
     }
   }
